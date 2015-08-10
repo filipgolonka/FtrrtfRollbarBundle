@@ -9,6 +9,7 @@
 
     <services>
         <service id="ftrrtf_rollbar.twig_extension" class="%ftrrtf_rollbar.twig_extension.class%">
+            <argument type="service" id="container" />
             <argument>%ftrrtf_rollbar.notifier.client.options%</argument>
             <argument>%ftrrtf_rollbar.environment.options%</argument>
             <argument type="service" id="ftrrtf_rollbar.helper.user"/>
